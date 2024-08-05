@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page - Student Management</title>
+    <link rel="stylesheet" href="admin.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">QR Code Attendance</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Admin</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="student.html">Student</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-5">
+        <h1>Student Management</h1>
+        <form id="studentForm" class="mb-4">
+            <input type="hidden" id="studentId" value="">
+            <div class="form-group">
+                <label for="studentName">Name:</label>
+                <input type="text" id="studentName" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="studentAge">Age:</label>
+                <input type="number" id="studentAge" class="form-control" required>
+            </div>
+            <button type="submit" id="addButton" class="btn btn-primary">Add Student</button>
+            <button type="button" id="updateButton" class="btn btn-secondary" style="display: none;">Update Student</button>
+        </form>
+        <button id="scanQrButton" class="btn btn-success mb-4">Scan QR Code</button>
+        <div id="qr-reader" style="display: none;"></div>
+
+        <h2>Student Activation</h2>
+        <table id="studentActivationTable" class="table table-striped mb-4">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Roll Number</th>
+                    <th>Email</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Unapproved students will be inserted here dynamically -->
+            </tbody>
+        </table>
+
+        <h2>All Students</h2>
+        <table id="studentsTable" class="table table-striped mb-4">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>QR Code</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Student details will be inserted here dynamically -->
+            </tbody>
+        </table>
+
+        <h2>Attendance List</h2>
+        <table id="attendanceTable" class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Attendance details will be inserted here dynamically -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/html5-qrcode" type="text/javascript"></script>
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="admin.js"></script>
+</body>
+</html>

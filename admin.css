@@ -1,0 +1,64 @@
+/* admin.css */
+/* Gradient Background */
+body {
+    background: linear-gradient(to right, #f3f4f7, #e2eafc);
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #007bff !important;
+}
+
+.nav-link {
+    color: #555 !important;
+    margin-right: 20px;
+}
+
+.nav-link:hover {
+    color: #007bff !important;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+}
+
+.table {
+    margin-top: 20px;
+}
+
+.table th, .table td {
+    text-align: center;
+}
+
+.qr-code {
+    text-align: center;
+    margin: auto;
+}
+
+.btn {
+    margin: 5px;
+}
+
+#qr-reader {
+    text-align: center;
+}

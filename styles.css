@@ -1,0 +1,130 @@
+/* Gradient Background */
+body {
+    background: url('img/index.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #007bff !important;
+}
+
+.nav-link {
+    color: #555 !important;
+    margin-right: 20px;
+}
+
+.nav-link:hover {
+    color: #007bff !important;
+}
+
+/* Content Area */
+.container {
+    padding: 30px;
+    border-radius: 10px; 
+    margin-top: 40px;
+}
+
+/* Margins for Divs */
+.mt-4 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/* Description Div */
+.description-div {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/* Features Div */
+.features-div {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/* How to Use Div */
+.how-to-use-div {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/* Title and Text Styling */
+h1, h2 {
+    color: #007bff;
+}
+
+p, ul {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Footer Styling */
+footer {
+    margin-top: 50px;
+    text-align: center;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Features Cards */
+.card {
+    border-radius: 10px;
+    border: 1px solid #e2eafc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body {
+    padding: 20px;
+    flex: 1;
+}
+
+.card-title {
+    color: #007bff;
+    font-weight: bold;
+}
+
+.card-body ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.card-body li {
+    margin-bottom: 10px;
+}
+
+/* How to Use List */
+.list-group-item {
+    background-color: #ffffff;
+    border: 1px solid #e2eafc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    padding: 15px;
+    font-size: 1.1em;
+}
