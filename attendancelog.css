@@ -1,4 +1,4 @@
-/* Background and container styling */
+/* Background Styling */
 body {
     background: url('img/admin.jpg') no-repeat center center fixed;
     background-size: cover;
@@ -26,29 +26,24 @@ body {
     color: #007bff !important;
 }
 
-/* Main Content Styling */
+/* Container Styling */
 .container {
-    background-color: #ffffff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 30px;
     border-radius: 10px; 
-    margin-top: 40px;
+    background-color: rgba(255, 255, 255, 0.9); /* White background with slight transparency */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Button Styling */
-.btn-block {
-    border-radius: 5px;
-    padding: 15px;
-    font-size: 1.1em;
+/* Table Styling */
+.table {
+    margin-top: 20px;
 }
 
-.btn-primary {
+.table thead th {
     background-color: #007bff;
-    border: none;
+    color: white;
 }
 
-.btn-primary:hover {
-    background-color: #0056b3;
+.table tbody tr:hover {
+    background-color: #f1f1f1;
 }

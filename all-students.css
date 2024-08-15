@@ -1,4 +1,5 @@
-/* Background and container styling */
+/* Similar styling as before, including background, navbar, and containers */
+
 body {
     background: url('img/admin.jpg') no-repeat center center fixed;
     background-size: cover;
@@ -6,7 +7,6 @@ body {
     color: #333;
 }
 
-/* Navbar Styling */
 .navbar {
     background-color: #ffffff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -26,29 +26,29 @@ body {
     color: #007bff !important;
 }
 
-/* Main Content Styling */
 .container {
-    background-color: #ffffff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 30px;
     border-radius: 10px; 
     margin-top: 40px;
 }
 
-/* Button Styling */
-.btn-block {
-    border-radius: 5px;
-    padding: 15px;
-    font-size: 1.1em;
+.description-div {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
 }
 
-.btn-primary {
-    background-color: #007bff;
-    border: none;
+h1 {
+    color: #007bff;
 }
 
-.btn-primary:hover {
-    background-color: #0056b3;
+.table {
+    margin-top: 20px;
+}
+
+.table thead th {
+    background-color: #f8f9fa;
+    color: #007bff;
 }

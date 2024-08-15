@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="login.css">
+    <title>All Students</title>
+    <link rel="stylesheet" href="styles.css">
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
@@ -21,27 +21,31 @@
                     <a class="nav-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="login.html">Admin</a>
-                </li>
+                    <a class="nav-link" href="admin.php">Student Activation</a>
+                </li> 
                 <li class="nav-item">
-                    <a class="nav-link" href="student-registration.html">Student</a>
+                    <a class="nav-link" href="all-students.html">All Students</a>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <!-- Login Container -->
-    <div class="login-container">
-        <div class="login-card">
-            <h1>Login</h1>
-            <form id="loginForm">
-                <label for="username">Username:</label>
-                <input type="text" id="username" required autocomplete="username">
-                <label for="password">Password:</label>
-                <input type="password" id="password" required autocomplete="current-password">
-                <button type="submit">Login</button>
-                <p id="error-message" style="color: red; display: none;">Invalid username or password</p>
-            </form>
+    <!-- Students List Container -->
+    <div class="container mt-4">
+        <div class="description-div">
+            <h1>All Accepted Students</h1>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Roll Number</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody id="students-table-body">
+                    <!-- Rows will be inserted here dynamically -->
+                </tbody>
+            </table>
         </div>
     </div>
 
@@ -49,6 +53,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="login.js"></script>
+    <script src="all-students.js"></script>
 </body>
 </html>

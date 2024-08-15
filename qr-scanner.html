@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="login.css">
+    <title>QR Scanner</title>
+    <link rel="stylesheet" href="admin.css"> <!-- Adjust the CSS file path if needed -->
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
@@ -24,31 +24,33 @@
                     <a class="nav-link" href="login.html">Admin</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="student-registration.html">Student</a>
+                    <a class="nav-link" href="student-registration.html">Register</a>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <!-- Login Container -->
-    <div class="login-container">
-        <div class="login-card">
-            <h1>Login</h1>
-            <form id="loginForm">
-                <label for="username">Username:</label>
-                <input type="text" id="username" required autocomplete="username">
-                <label for="password">Password:</label>
-                <input type="password" id="password" required autocomplete="current-password">
-                <button type="submit">Login</button>
-                <p id="error-message" style="color: red; display: none;">Invalid username or password</p>
-            </form>
+    <!-- QR Scanner Container -->
+    <div class="container mt-4">
+        <h1 class="text-center">QR Code Scanner</h1>
+        <div class="text-center">
+            <video id="qrScanner" width="100%" height="auto" style="border: 1px solid #ccc;"></video>
+            <button id="startScanner" class="btn btn-primary mt-3">Start Scanner</button>
+            <p id="message" style="color: green; display: none;" class="text-center">QR Code scanned successfully!</p>
+            <p id="error-message" style="color: red; display: none;" class="text-center">An error occurred. Please try again.</p>
         </div>
     </div>
 
+    <!-- jsQR Library -->
+    <script src="https://unpkg.com/jsqr/dist/jsQR.js"></script>
     <!-- Bootstrap JS, Popper.js, and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="login.js"></script>
+    <script src="https://unpkg.com/html5-qrcode/minified/html5-qrcode.min.js"></script>
+
+
+    <!-- Custom JS -->
+    <script src="qr-scanner.js"></script>
 </body>
 </html>

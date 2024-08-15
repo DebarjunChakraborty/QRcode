@@ -4,14 +4,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
     loginForm.addEventListener('submit', (event) => {
         event.preventDefault();
-        const username = document.getElementById('username').value;
-        const password = document.getElementById('password').value;
+        
+        const username = document.getElementById('username').value.trim();
+        const password = document.getElementById('password').value.trim();
 
         if (username === 'admin' && password === 'password') {
+            console.log('Credentials are correct, setting session and redirecting...');
             sessionStorage.setItem('loggedIn', 'true');
-            window.location.href = 'admin.html';
+            window.location.href = "admin.php";
         } else {
+            console.log('Incorrect credentials.');
             errorMessage.style.display = 'block';
+            errorMessage.textContent = 'Incorrect username or password.';
         }
     });
 });
