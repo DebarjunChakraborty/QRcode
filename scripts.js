@@ -3,9 +3,9 @@ function loadHomePage() {
 }
 
 function loadAdminPage() {
-    window.location.href = "admin.html";
+    window.location.href = "admin.php";
 }
 
 function loadStudentPage() {
-    window.location.href = "student.html"; // Placeholder for student page
+    window.location.href = "student-registration.html"; // Placeholder for student page
 }

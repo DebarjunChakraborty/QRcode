@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="login.css">
+    <title>Student Login</title>
+    <link rel="stylesheet" href="student-login.css">
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
@@ -21,10 +21,7 @@
                     <a class="nav-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="login.html">Admin</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="student-registration.html">Student</a>
+                    <a class="nav-link" href="student-registration.html">Register</a>
                 </li>
             </ul>
         </div>
@@ -33,22 +30,23 @@
     <!-- Login Container -->
     <div class="login-container">
         <div class="login-card">
-            <h1>Login</h1>
+            <h1>Student Login</h1>
             <form id="loginForm">
-                <label for="username">Username:</label>
-                <input type="text" id="username" required autocomplete="username">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
                 <label for="password">Password:</label>
-                <input type="password" id="password" required autocomplete="current-password">
+                <input type="password" id="password" name="password" required>
                 <button type="submit">Login</button>
-                <p id="error-message" style="color: red; display: none;">Invalid username or password</p>
-            </form>
+                <p id="message" style="color: green; display: none;">Login successful!</p>
+                <p id="error-message" style="color: red; display: none;">Login failed. Please check your credentials or wait for approval.</p>
+            </form> 
         </div>
     </div>
 
     <!-- Bootstrap JS, Popper.js, and jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="login.js"></script>
+    <script src="student-login.js"></script>
 </body>
 </html>
